@@ -5,7 +5,7 @@ import './Navbar.css'; // Import the CSS file here
 
 const Navbar = () => {
     return (
-        <Box minW={'100%'} minH={'60px'} bg={'#32a852'}>
+        <Box minW={'100%'} minH={'60px'} bg={'#32a852'} pr={'40px'}>
             <HStack spacing={6} justifyContent={"flex-end"} py={6}>
                 <NavLink to={'/dashboard'} className="nav-link">Dashboard</NavLink>
                 <NavLink to={'/rooms'} className="nav-link">Rooms</NavLink>
