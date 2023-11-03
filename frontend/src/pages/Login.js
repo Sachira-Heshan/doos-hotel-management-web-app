@@ -8,8 +8,8 @@ import { LockIcon } from '@chakra-ui/icons';
 
 const Login = () => {
 
-    const handleSubmit = () => {
-
+    const handleSubmit = (values) => {
+        console.log(values);
     }
 
     const formik = useFormik({
@@ -17,7 +17,7 @@ const Login = () => {
             username: "",
             password: ""
         },
-        onSubmit: (values) => { handleSubmit() },
+        onSubmit: (values) => { handleSubmit(values) },
         validationSchema: Yup.object({
             username: Yup.string().required("Required"),
             password: Yup.string().required("Required"),
