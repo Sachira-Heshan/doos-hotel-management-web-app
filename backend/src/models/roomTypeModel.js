@@ -1,4 +1,5 @@
 // RoomType model
+import mongoose from "mongoose"
 const roomTypeSchema = new mongoose.Schema({
     name: {
         type: String,
