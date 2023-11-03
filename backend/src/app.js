@@ -14,6 +14,7 @@ connectDB();
 
 app.use("/auth", authRouter);
 
+
 app.use(errorHandler);
 
 app.listen(PORT, () => {
