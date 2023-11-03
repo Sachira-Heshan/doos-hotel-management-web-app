@@ -1,13 +1,6 @@
 import mongoose from "mongoose"
 const roomSchema = new mongoose.Schema({
-    //add id auto increment
-    id:{
-        type: Number,
-        required: true,
-        unique: true
-    },
-
-
+   
     roomNumber: {
         type: String,
         required: true,
