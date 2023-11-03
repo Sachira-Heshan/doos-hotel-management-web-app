@@ -1,8 +1,8 @@
 import express from 'express';
 
-import { connectDB } from './config/db';
+import { connectDB } from './config/db.js';
 import { errorHandler } from "./middlewares/errorHandler.js"
-import { authRoutes } from '';
+import { authRouter } from './routers/authRoutes.js';
 
 const PORT = process.env.PORT || 5000;
 
@@ -12,7 +12,7 @@ app.use(express.json());
 
 connectDB();
 
-app.use("/auth", authRoutes);
+app.use("/auth", authRouter);
 
 app.use(errorHandler);
 
