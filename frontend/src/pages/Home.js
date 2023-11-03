@@ -1,8 +1,14 @@
 import React from 'react';
 
+import { Box } from '@chakra-ui/react';
+
 const Home = () => {
     return (
-        <div>Dashboard</div>
+        <Box minW={'100%'} centerContent>
+            <Box maxW={'1300px'} mx={'auto'}>
+                <div>Dashboard</div>
+            </Box>
+        </Box>
     );
 }
 

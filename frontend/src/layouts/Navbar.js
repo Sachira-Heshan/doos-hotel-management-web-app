@@ -7,7 +7,7 @@ import { Box, VStack, HStack, UnorderedList, ListItem } from "@chakra-ui/react";
 const Navbar = () => {
     return (
         <Box minW={'100%'} minH={'60px'} bg={'#32a852'}>
-            <HStack spacing={6} alignItems={"center"} justifyContent={"center"}>
+            <HStack spacing={6} justifyContent={"center"} py={6}>
                 <NavLink to={'/dashboard'}>Dashboard</NavLink>
                 <NavLink to={'/rooms'}>Rooms</NavLink>
                 <NavLink to={'/roomtype'}>Room Type</NavLink>
