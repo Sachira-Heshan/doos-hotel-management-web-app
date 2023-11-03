@@ -38,6 +38,7 @@ const userRegister = asyncHandler(async (req, res) => {
         phone
     })
     console.log(user)
+    res.status(201).json({ accessToken, user_data })
 })
 
 //@desc User login
