@@ -54,5 +54,15 @@ const addReservation = async (req, res) => {
         const reservations = await Reservation.find({}).populate("room");
         res.json(reservations);
     };
+    //find reservation by id
+    const getReservationById = async (req, res) => {
+        const reservation = await Reservation.findById(req.params.id);
+        if (reservation) {
+            res.json(reservation);
+        } else {
+            res.status(404);
+            throw new Error("Reservation not found!");
+        }
+    };
 
 export { addReservation, cancelReservation, getReservations };
