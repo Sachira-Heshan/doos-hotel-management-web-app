@@ -1,7 +1,6 @@
-import e from "express"
 import {
     addRoomType, editRoomType, getRoomTypes
-} from "../controllers/addroomTypeControllers.js"
+} from "../controllers/roomTypeControllers.js"
 import express from "express"
 
 const roomTypeRouter = express.Router()

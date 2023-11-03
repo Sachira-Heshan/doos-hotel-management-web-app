@@ -3,9 +3,11 @@ import { Box } from '@chakra-ui/react';
 
 import {
     BsFillCaretRightFill
-} from "react-icons/bs";import './Style.css'
+} from "react-icons/bs";
+import './Style.css'
 
 const Home = () => {
+
     return (
         <Box minW={'100%'} centerContent>
             <Box maxW={'1300px'} mx={'auto'}>
@@ -22,6 +24,8 @@ const Home = () => {
                     </div>
 
                 </div>
+
+
 
 
             </Box>

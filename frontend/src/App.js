@@ -10,6 +10,7 @@ import Rooms from './pages/Rooms';
 import RoomType from './pages/RoomType';
 import Reservation from './pages/Reservation';
 import Navbar from './layouts/Navbar';
+import Footer from './layouts/Footer';
 
 const theme = extendTheme({
   fonts: {
@@ -30,6 +31,7 @@ const App = () => {
           <Route path='/roomtype' element={<RoomType />} />
           <Route path='/reservation' element={<Reservation />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </ChakraProvider>
   );
