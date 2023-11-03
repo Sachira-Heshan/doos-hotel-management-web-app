@@ -3,6 +3,7 @@ import './App.css';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 
 import Home from './pages/Home';
+import Login from './pages/Login';
 
 const theme = extendTheme({
   fonts: {
@@ -14,7 +15,7 @@ const theme = extendTheme({
 const App = () => {
   return (
     <ChakraProvider theme={theme}>
-      <Home />
+      <Login />
     </ChakraProvider>
   );
 }
